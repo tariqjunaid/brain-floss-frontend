@@ -1,13 +1,148 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   /* background-color: black; */
+   text-align: center;
+
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+   monospace;
+}
+
+.react-card-flipper > div {
+   display: flex;
+}
+
+.ui.card>.content, 
+
+.ui.cards>.card>.content {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   background-color: teal;
+   background-image: url("https://media.giphy.com/media/o33XknjkRrGSc/giphy.gif");
+   background-size: 20px;
+   background-attachment: fixed;
+}
+
+.ui.card select {
+   margin-bottom: .5em;
+}
+.react-card-flip {
+   margin-bottom: 1.9em;
+   min-height: 150px;
+   min-width: 380px;
+   width: 100%;
+}
+
+@media (min-width: 576px) {
+   .react-card-flip {
+      width: 50%;
+   }
+}
+
+@media (min-width: 768px) {
+   .react-card-flip {
+      width: calc(100% / 3);
+   }
+}
+
+@media (min-width: 992px) {
+   .react-card-flip {
+      width: 25%;
+   }
+}
+
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+    color: lawngreen;
+}
+
+.ui.card .meta, .ui.cards>.card .meta {
+    font-size: 1em;
+    color: cyan;
+
+}.ui.card select {
+    margin-bottom: .5em;
+    color: maroon;
+}
+
+.ui.card a, .ui.cards>.card a {
+    cursor: progress;
+}
+
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+    background-color: cadetblue;
+}
+
+.ui.large.image, .ui.large.images .image, .ui.large.images img, .ui.large.images svg {
+    width: 100%;
+    height: 150px;
+    font-size: 1.14285714rem;
+}
+
+.quiz-card {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.ui.card {
+    margin: 0.5em;
+}
+
+.ui.card a, .ui.cards>.card a {
+    cursor: progress;
+    width: auto;
+    font-size: x-large;
+}
+
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-top: 0.2em;
+    line-height: 1.28571429em;
+}
+
+.ui.cards>.red.card, .ui.red.card, .ui.red.cards>.card {
+    font-size: x-large;
+    width: auto;
+}
+
+.ui.cards>.yellow.card, .ui.yellow.card, .ui.yellow.cards>.card {
+    font-size: x-large;
+    width: auto;
+}
+
+.ui.cards>.orange.card, .ui.orange.card, .ui.orange.cards>.card {
+    font-size: x-large;
+    width: auto;
+}
+
+.ui.blue.card, .ui.blue.cards>.card, .ui.cards>.blue.card {
+    font-size: x-large;
+    width: auto;
+}
+
+.ui.card:last-child {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.result-container {
+   font-size: x-large;
+   font-weight: 500;
+   margin-top: 15%;
+}
+
+.ui.input>input {
+   border-radius: 1.3rem;
 }

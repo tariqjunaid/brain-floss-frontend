@@ -1,0 +1,21 @@
+.react-card-flipper > div {
+    display: flex;
+}
+
+.react-card-flip {
+    margin-bottom: 1em;
+    min-height: 110px;
+}
+
+.ui.card>.content, 
+.ui.cards>.card>.content {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+}
+
+.ui.card select {
+   margin-bottom: .5em;
+}
+
+
