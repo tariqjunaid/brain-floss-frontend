@@ -5,8 +5,9 @@ body {
       sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   /* background-color: black; */
+   background-color: black;
    text-align: center;
+   color: blanchedalmond;
 
 }
 
@@ -29,6 +30,7 @@ code {
    background-image: url("https://media.giphy.com/media/o33XknjkRrGSc/giphy.gif");
    background-size: 20px;
    background-attachment: fixed;
+   color: blue;
 }
 
 .ui.card select {
@@ -60,7 +62,7 @@ code {
 }
 
 .ui.card>.content>.header, .ui.cards>.card>.content>.header {
-    color: lawngreen;
+    color: cyan;
 }
 
 .ui.card .meta, .ui.cards>.card .meta {
@@ -103,6 +105,8 @@ a {
     cursor: progress;
     width: auto;
     font-size: x-large;
+    color: black;
+    background: floralwhite;
 }
 
 .ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
@@ -145,4 +149,78 @@ a {
 
 .ui.input>input {
    border-radius: 1.3rem;
+}
+
+.ui.header {
+   color: turquoise;
+}
+
+.login-form {
+    display: inline-block;
+    margin: 115px;
+}
+
+.signup-form {
+    display: inline-block;
+    margin: 115px;
+}
+
+.ui.segment, .ui.segments .segment {
+    font-size: 1rem;
+    background: none;
+}
+
+.title {
+    font-size: -webkit-xxx-large;
+    color: turquoise;
+    font-family: cursive;
+    margin-top: 245px;
+}
+
+.ui.inverted.segment, .ui.primary.inverted.segment {
+    color: rgba(255,255,255,.9);
+    display: inherit;
+    margin-top: 100px;
+    background: black;
+}
+
+.ui.basic.green.button, .ui.basic.green.buttons .button {
+    margin-top: 30px;
+}
+
+.correct {
+   margin-top: 1rem;
+   font-size: -webkit-xxx-large;
+   color: green;
+   font-family: monospace;
+}
+
+.incorrect {
+   margin-top: 1rem;
+   font-size: -webkit-xxx-large;
+   color: red;
+   font-family: monospace;
+}
+
+canvas {
+    display: flex;
+}
+
+.react-countdown-clock {
+    margin: auto;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.ques-no {
+    font-family: monospace;
+    font-size: xx-large;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.disabledbutton {
+    pointer-events: none;
 }

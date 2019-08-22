@@ -1,12 +1,11 @@
 import React from 'react';
 import { Card, Image, Header } from "semantic-ui-react";
 
-
 const ProfileCard = (props) => {
    return props.user ? (
       
       <div>
-         <Image src={props.user.cover} size='large' centered />
+         {/* <Image src={props.user.cover} size='large' centered /> */}
          <Header as='h1'>
             <Image circular src={props.user.avatar} /> {props.user.first_name} {props.user.last_name}
          </Header>

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import './App.css';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import './App.css';
 import Nav from './components/Nav';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -8,8 +8,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import CategoryContainer from './containers/CategoryContainer';
 import { NotFound } from './components/NotFound';
-import { Home } from './components/Home';
-import Profile from './containers/Profile'
+import Home from './components/Home';
+import Profile from './containers/ProfileContainer';
 import QuizContainer from './containers/QuizContainer';
 
 const URI = 'http://localhost:3000/profile';

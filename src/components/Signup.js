@@ -36,6 +36,7 @@ class Signup extends React.Component {
       return (
          <div>
             <h1>Signup!</h1>
+            <div className='signup-form'>
             <Segment>
                <Form
                   onSubmit={this.handleSigninSubmit}
@@ -59,7 +60,7 @@ class Signup extends React.Component {
                      <Form.Input
                         type="email"
                         label="Email"
-                        placeholder="email"
+                        placeholder="email (optional)"
                         name="email"
                         onChange={this.handleChange}
                         value={this.state.email}
@@ -80,6 +81,7 @@ class Signup extends React.Component {
                   </Button.Group>
                </Form>
             </Segment>
+            </div>
          </div>
       );
    }

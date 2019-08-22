@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Button, Form, Segment, Message } from "semantic-ui-react";
 
-class Login extends React.Component {
+class Login extends Component {
    state = {
       username: "",
       password: ""
@@ -35,42 +35,40 @@ class Login extends React.Component {
       return (
          <div>
             <h1>Login!</h1>
-         <Segment>
-               <Form
-                  onSubmit={this.handleLoginSubmit}
-                  size="mini"
-                  key="mini"
-                  loading={this.props.authenticatingUser}
-                  error={this.props.failedLogin}
-               >
-                  <Message
-                     error
-                     header={this.props.failedLogin ? this.props.error : null}
-                  />
-                  <Form.Group widths="equal">
-                     <Form.Input
-                        label="Username"
-                        placeholder="username"
-                        name="username"
-                        onChange={this.handleChange}
-                        value={this.state.username}
-                     />
-                     <Form.Input
-                        type="password"
-                        label="Password"
-                        placeholder="password"
-                        name="password"
-                        onChange={this.handleChange}
-                        value={this.state.password}
-                     />
-                  </Form.Group>
-                  <Button.Group>
-                     <Button color='green' type="submit">Login</Button>
-                     <Button.Or />
-                     <Button color='red' as={NavLink} to='/signup'>Signup</Button>
-                  </Button.Group>
-               </Form>
-            </Segment>
+            <div className='login-form'>         
+               <Segment>
+                  <Form
+                     onSubmit={this.handleLoginSubmit}
+                     size="mini"
+                     key="mini"
+                     loading={this.props.authenticatingUser}
+                     error={this.props.failedLogin}>
+                     <Message
+                        error
+                        header={this.props.failedLogin ? this.props.error : null}/>
+                     <Form.Group widths="equal">
+                        <Form.Input
+                           label="Username"
+                           placeholder="username"
+                           name="username"
+                           onChange={this.handleChange}
+                           value={this.state.username}/>
+                        <Form.Input
+                           type="password"
+                           label="Password"
+                           placeholder="password"
+                           name="password"
+                           onChange={this.handleChange}
+                           value={this.state.password}/>
+                     </Form.Group>
+                     <Button.Group>
+                        <Button color='green' type="submit">Login</Button>
+                           <Button.Or />
+                        <Button color='red' as={NavLink} to='/signup'>Signup</Button>
+                     </Button.Group>
+                  </Form>
+               </Segment>
+            </div>
          </div>
       );
    }

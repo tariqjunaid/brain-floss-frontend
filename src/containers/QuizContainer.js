@@ -3,6 +3,8 @@ import { withRouter } from 'react-router-dom';
 import Result from '../components/quiz/Result';
 import QuizCard from '../components/quiz/QuizCard';
 
+const quizAPI = 'http://localhost:3000/quizzes';
+
 class QuizContainer extends Component {
    constructor() {
       super()
@@ -27,7 +29,7 @@ class QuizContainer extends Component {
                index: this.state.index + 1,
                question: this.state.question + 1
             })
-      },1000)
+      },1500)
    }
 
    handlePoints = () => {
@@ -37,7 +39,7 @@ class QuizContainer extends Component {
    handleResults = () => {
       this.props.history.push('/categories');
 
-      fetch('http://localhost:3000/quizzes', {
+      fetch(quizAPI, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json',
