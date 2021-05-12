@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.3.2",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "mdbreact": "^4.19.0",
     "react": "^16.8.6",
     "react-card-flip": "^0.8.1",
